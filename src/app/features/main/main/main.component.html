@@ -1,0 +1,15 @@
+<mat-tab-group
+  color="primary"
+  backgroundColor="primary"
+  mat-align-tabs="center"
+>
+  <!-- (selectedTabChange)="changeTab($event)" -->
+  <mat-tab label="Admin"> <app-admin></app-admin> </mat-tab>
+  <mat-tab label="Game"> <app-game></app-game> </mat-tab>
+  <mat-tab label="Leaderboard">
+    <app-leaderboard></app-leaderboard>
+  </mat-tab>
+</mat-tab-group>
+<button class="logoutBtn" (click)="onLogout()" mat-raised-button color="warn">
+  Log out
+</button>

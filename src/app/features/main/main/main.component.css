@@ -1,0 +1,10 @@
+.mat-tab-label{
+    margin: 0 30%;
+}
+
+.logoutBtn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    z-index: 2;
+}

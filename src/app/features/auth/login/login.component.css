@@ -1,0 +1,16 @@
+
+.example-full-width {
+  width: 100%;
+}
+
+mat-card-header {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+button {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,39 @@
+.example-button-toggle-label {
+  display: inline-block;
+  margin: 16px;
+}
+
+
+
+
+
+ .div-wrapper{
+    background-color: #303030;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  mat-tab-group {
+    max-width: 320px;
+    background: #7b1fa2;
+
+  max-height: 900;
+  height: fit-content;
+  position: absolute;
+  
+  
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  
+  }
+
+  mat-card-actions {
+    display: flex;
+  }
+
+  button {
+    margin-top:0;
+    width: 50%;
+  } 

@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "name": "user",
+      "lastname": "username",
+      "email": "user@gmail.com",
+      "password": "qwerty"
+    },
+    {
+      "email": "mq@gmail.com",
+      "password": "1234",
+      "name": "mari",
+      "lastname": "mari",
+      "id": 1
+    },
+    {
+      "email": null,
+      "password": null,
+      "name": null,
+      "lastname": null,
+      "id": 2
+    },
+    {
+      "email": "",
+      "password": "",
+      "name": "",
+      "lastname": "",
+      "id": 3
+    }
+  ]
+}

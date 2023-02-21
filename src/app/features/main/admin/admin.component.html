@@ -1,0 +1,44 @@
+<h3>Admin Panel</h3>
+<mat-accordion>
+  <span class="addBtn" (click)="onAdd()">+</span>
+  <div *ngIf="showForm" class="form" [formGroup]="form">
+    <mat-form-field appearance="fill">
+      <mat-label>Answer</mat-label>
+      <input width="200px" matInput formControlName="answer" />
+    </mat-form-field>
+    <label for="">First picture</label>
+    <input #fileUpload (input)="getBase64()" type="file" />
+    <label for="">Second picture</label>
+    <input #secFileUpload (input)="secGetBase64()" type="file" />
+    <button mat-raised-button color="primary" (click)="addNewQuestion()">
+      Add question
+    </button>
+  </div>
+
+  <mat-expansion-panel
+    *ngFor="let question of questions"
+    (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false"
+  >
+    <mat-expansion-panel-header>
+      <mat-panel-title> {{ question.id }} </mat-panel-title>
+      <mat-panel-description>
+        {{ question.answer }}
+        <!-- Currently I am {{ panelOpenState ? "open" : "closed" }} -->
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <img
+      width="300px"
+      height="200px"
+      [src]="question.firstPicture"
+      alt="no image"
+    />
+    <img
+      width="300px"
+      height="200px"
+      [src]="question.secondPicture"
+      alt="no image"
+    />
+    <span class="deleteBtn" (click)="onDelete(question.id)">X</span>
+  </mat-expansion-panel>
+</mat-accordion>
